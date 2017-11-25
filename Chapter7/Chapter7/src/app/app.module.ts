@@ -6,6 +6,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { DataService } from "./new-http-client/DataService";
 import { HTTP_INTERCEPTORS } from "@angular/common/http";
 import { MockInterceptor } from "./new-http-client/mock.interceptor";
+import { TaskModule } from "./tasks/task.module";
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MockInterceptor } from "./new-http-client/mock.interceptor";
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    TaskModule
   ],
   providers: [
     DataService,
@@ -22,3 +24,8 @@ import { MockInterceptor } from "./new-http-client/mock.interceptor";
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
+/*
+,
+    { provide: HTTP_INTERCEPTORS, useClass: MockInterceptor, multi: true }
+*/
