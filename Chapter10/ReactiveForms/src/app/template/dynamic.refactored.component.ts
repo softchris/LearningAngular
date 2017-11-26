@@ -4,6 +4,7 @@ import { FormControl, FormGroup, Validators } from "@angular/forms";
 @Component({
   selector: 'dynamic-refactored',
   template: `
+  <h2>Form with dynamic content</h2>
   <form (ngSubmit)="submit()" [formGroup]="dynamicForm">
   <div *ngFor="let q of questions">
     {{ q.Question }}

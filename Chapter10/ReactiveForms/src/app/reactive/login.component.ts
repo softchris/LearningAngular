@@ -5,6 +5,7 @@ import 'rxjs/add/operator/do';
 @Component({
   selector: 'login-component',
   template: `
+  <h2>Login component</h2>
   <form class="form-group" [formGroup]="loginForm">
     <input type="text"
            class="form-control"
@@ -13,13 +14,20 @@ import 'rxjs/add/operator/do';
     <input class="form-control"
            type="password"
            placeholder="Your password">
-    <div *ngIf="loginForm.get('username').hasError('required')">
+    <div class="help-block" *ngIf="loginForm.get('username').hasError('required')">
       Username is required
     </div>
     <p *ngIf="showUsernameHint"class="help-block">
-     That does not look like a proper username
+     That does not look like a proper username, needs to be an email
     </p>
-  </form>`
+  </form>`,
+  styles: [`
+  .help-block {
+    border: solid 2px red;
+    background: salmon;
+    padding: 10px;
+  }
+  `]
 })
 export class LoginComponent implements AfterViewInit {
   loginForm: FormGroup;

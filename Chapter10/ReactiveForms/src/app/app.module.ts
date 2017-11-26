@@ -3,20 +3,19 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { AppComponent } from './app.component';
-import { ReactiveFormsModule } from "@angular/forms";
-import { DynamicComponent } from "./dynamic.component";
-import { DynamicRefactored } from "./dynamic.refactored.component";
-import { FormComponent } from "./person.form.component";
-import { LoginComponent } from "./login.component";
+
+import { ReactiveModule } from "./reactive/reactive.module";
+import { TemplateModule } from "./template/template.module";
 
 @NgModule({
   declarations: [
-    AppComponent, DynamicComponent, DynamicRefactored, FormComponent, LoginComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    ReactiveFormsModule,
-    RouterModule
+    RouterModule,
+    ReactiveModule,
+    TemplateModule
   ],
   providers: [],
   bootstrap: [AppComponent]
