@@ -11,8 +11,7 @@ import { MatTableDataSource, MatSort, MatPaginator } from "@angular/material";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild(MatSort) sort: MatSort;
-  @ViewChild(MatPaginator) paginator: MatPaginator;
+
   input;
   title = 'app';
   myControl: FormControl;
@@ -34,46 +33,10 @@ export class AppComponent {
     { text: 'Three', cols: 1, rows: 1, color: 'lightpink' },
     { text: 'Four', cols: 2, rows: 1, color: '#DDBDF1' },
   ];
-  jediSource: Array<Jedi>;
-  tableSource: MatTableDataSource<Jedi>;
-  displayedColumns: string[];
 
-  ngAfterViewInit() {
-    this.tableSource.sort = this.sort;
-    this.tableSource.paginator = this.paginator;
-  }
+
 
   constructor() {
-    this.displayedColumns = ['name', 'side'];
-
-    this.jediSource = [{
-      name: 'Yoda',
-      side: 'Good'
-    },
-    {
-      name: 'Darth',
-      side: 'Evil'
-    },
-    {
-      name: 'Palpatine',
-      side: 'Evil'
-    },
-    {
-      name: 'Anakin',
-      side: 'Good'
-    },
-    {
-      name: 'Mace Windu',
-      side: 'Good'
-    },
-    {
-      name: 'Darth Plagueous',
-      side: 'Evil'
-    }];
-
-    this.tableSource = new MatTableDataSource<Jedi>(this.jediSource);
-
-
     this.nameInput = new FormControl('', [
       Validators.required
     ]);
@@ -91,8 +54,5 @@ export class AppComponent {
   }
 }
 
-export interface Jedi {
-  name: string;
-  side: string;
-}
+
 

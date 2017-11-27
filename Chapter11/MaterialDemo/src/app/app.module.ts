@@ -19,12 +19,14 @@ import { DialogComponent } from "./dialog.component";
 
 import { MatSortModule } from '@angular/material/sort';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { TableExampleComponent } from "./table.example.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     DialogComponent,
-    DialogExampleComponent
+    DialogExampleComponent,
+    TableExampleComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +48,6 @@ import { MatPaginatorModule } from '@angular/material/paginator';
     MatPaginatorModule,
     MatTableModule,
     MatSortModule
-
   ],
   providers: [],
   bootstrap: [AppComponent],

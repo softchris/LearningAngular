@@ -10,13 +10,23 @@ import { DialogComponent } from "./dialog.component";
 })
 export class DialogExampleComponent {
   selectedOption;
+  jedi: Jedi;
 
-  constructor(private dialog: MatDialog) { }
+  constructor(private dialog: MatDialog) {
+    this.jedi = { name: 'Luke' };
+  }
 
   openDialog() {
-    let dialogRef = this.dialog.open(DialogComponent);
+    let dialogRef = this.dialog.open(DialogComponent, {
+      data: { jedi: this.jedi }
+    });
+
     dialogRef.afterClosed().subscribe(result => {
-      this.selectedOption = result;
+      console.log(result);
     });
   }
+}
+
+interface Jedi {
+  name: string;
 }
