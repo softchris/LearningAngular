@@ -1,7 +1,7 @@
 import { PageNotFoundComponent } from "./page.not.found.component";
 import { PopupComponent } from "./popup.component";
 
-const routes = [
+export const routes = [
   {
     path: "**", component: PageNotFoundComponent
   },
@@ -14,6 +14,4 @@ const routes = [
     path: 'lazy',
     loadChildren: 'app/lazy/lazy.module#LazyModule'
   }
-]
-
-export default routes;
+];

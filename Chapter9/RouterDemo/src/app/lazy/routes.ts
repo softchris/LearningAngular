@@ -1,8 +1,7 @@
 import { LazyComponent } from "./lazy.component";
 
-const routes = [{
+export const routes = [{
   path: 'lazy',
   component: LazyComponent
 }];
 
-export default routes;

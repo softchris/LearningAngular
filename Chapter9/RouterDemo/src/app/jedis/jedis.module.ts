@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import routes from './routes';
+import { routes } from './routes';
 import { RouterModule } from "@angular/router";
 import { JediComponent } from "./jedi.component";
 import { JediHeaderComponent } from "./jedi.header.component";

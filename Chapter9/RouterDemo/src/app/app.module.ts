@@ -4,7 +4,7 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import routes from './routes';
+import { routes } from './routes';
 import { HomeModule } from "./home/home.module";
 import { TaskModule } from "./tasks/task.module";
 import { TimerModule } from "./timer/timer.module";

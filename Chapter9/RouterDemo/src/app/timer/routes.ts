@@ -1,8 +1,7 @@
 import { TimerComponent } from "./timer.component";
 
-const routes = [{
+export const routes = [{
   path: 'timer',
   component: TimerComponent
-}]
+}];
 
-export default routes;

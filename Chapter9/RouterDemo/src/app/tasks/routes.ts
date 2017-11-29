@@ -2,7 +2,7 @@ import { TasksComponent } from "./tasks.component";
 import { TaskEditorComponent } from "./task.editor.component";
 import { TaskDetailComponent } from "./task.detail.component";
 
-const routes = [
+export const routes = [
   {
     path: 'tasks/:id',
     component: TaskDetailComponent
@@ -17,4 +17,3 @@ const routes = [
     component: TaskEditorComponent
   }];
 
-export default routes;

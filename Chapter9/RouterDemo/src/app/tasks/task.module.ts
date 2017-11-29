@@ -7,7 +7,7 @@ import { TaskTooltipDirective } from './task.tooltip.directive';
 
 import { BrowserModule } from '@angular/platform-browser';
 
-import routes from './routes';
+import { routes } from './routes';
 import { TaskDetailComponent } from "./task.detail.component";
 import { TaskService } from "./task.service";
 

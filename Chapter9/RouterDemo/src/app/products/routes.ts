@@ -4,7 +4,7 @@ import { ProductDetailComponent } from "./product.detail.component";
 import { ProductsDetailOrders } from "./products.detailorders.component";
 import { AuthGuard } from "../common/auth.guard";
 
-const routes = [{
+export const routes = [{
   path: 'products',
   canActivate: [AuthGuard],
   component: ProductsContainerComponent,
@@ -20,4 +20,3 @@ const routes = [{
   }]
 }];
 
-export default routes;
