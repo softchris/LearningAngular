@@ -24,12 +24,17 @@ import { LazyModule } from "./lazy/lazy.module";
     BrowserModule,
     RouterModule.forRoot(routes, { enableTracing: true }),
     HttpClientModule,
-    HomeModule,
     TaskModule,
     TimerModule,
     ProductsModule,
     JedisModule,
     LazyModule
+    /*
+    HomeModule,
+    TimerModule,
+    ProductsModule,
+    JedisModule,
+    LazyModule*/
   ],
   providers: [AuthGuard, AuthService],
   bootstrap: [AppComponent]

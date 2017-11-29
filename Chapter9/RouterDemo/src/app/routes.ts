@@ -12,6 +12,6 @@ export const routes = [
   },
   {
     path: 'lazy',
-    loadChildren: 'app/lazy/lazy.module#LazyModule'
+    loadChildren: 'app/lazy/lazy.module#LazyModule',
   }
 ];
