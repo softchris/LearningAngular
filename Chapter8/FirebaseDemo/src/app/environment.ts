@@ -11,12 +11,12 @@ https://console.firebase.google.com
 
 export const environment = {
   firebase: {
-    apiKey: "",
-    authDomain: "",
-    databaseURL: "",
-    projectId: "",
-    storageBucket: "",
-    messagingSenderId: ""
+    apiKey: "AIzaSyDVbBRiWSsOxzUOAdgy6r-HBAXCyPtccds",
+    authDomain: "book1-3e969.firebaseapp.com",
+    databaseURL: "https://book1-3e969.firebaseio.com",
+    projectId: "book1-3e969",
+    storageBucket: "book1-3e969.appspot.com",
+    messagingSenderId: "241411742413"
   }
 
 }
