@@ -1,11 +1,25 @@
 {
-  "compilerOptions" : {
+  "compilerOptions": {
     "target": "es5",
-    "sourceMap": true, 
+    "sourceMap": true,
     "outDir": "./js"
   },
   "files": [
-    "let.js",
-    "types.ts"
+    "let.ts",
+    "types.ts",
+    "const.ts",
+    "number.ts",
+    "boolean.ts",
+    "array.ts",
+    "any.ts",
+    "custom-type.ts",
+    "enum.ts",
+    "void.ts",
+    "types-in-functions.ts",
+    "optional-parameters.ts",
+    "default-parameters.ts",
+    "rest-parameters.ts",
+    "lambdas.ts",
+    "spread.ts"
   ]
 }
